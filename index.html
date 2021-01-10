@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Welcome to Piyush's component library!</h1>
@@ -17,18 +18,25 @@
     <h2>Second biggest heading</h2>
     <p>This is normal paragraph</p>
     <small>Small tag is used to render small text.</small>
+    <p>This paragraph will have <strong>bold</strong> text.</p>
+
+    <p>Note: If we write something and it takes entire row, then it's called block elements</p>
+    <p>Note: If we write something and it does not takes entire row, it takes it's own space, then it's called inline elements</p>
+    <p>h3, p, div are block elements</p>
 
     <hr>
 
     <h2>@Containers</h2>
     
     <p>Container is an empty space, we can use div tags</p>
-    
+    <p>padding: top right bottom left;</p>
+    <p>if we write padding: top right;</p>
+    <p>then the padding of top will be applied to bottom and right will be applied to left. Check styes.css for container</p>
     <h3>fluid container</h3>
-    <div>This is a fluid container which will go to the end of the page(full width)</div>
+    <div class="container">This is a fluid container which will go to the end of the page(full width)</div>
 
     <h3>center container</h3>
-    <div>This is a fluid container and it will go to a specific wdth</div>
+    <div class=" container container-center">This is a fluid container and it will go to a specific width</div>
 
     <hr>
 
@@ -37,13 +45,9 @@
     <p>Anything which connect to other thing is a link</p>
     <p>We define it using anchor tag and use a attribute href to redirect</p>
     
-    <a href="https://www.google.com">Google</a>
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
-
-    <p>Note: If we write something and it takes entire row, then it's called block elements</p>
-    <p>Note: If we write something and it does not takes entire row, it takes it's own space, then it's called inline elements</p>
-    <p>h3, p, div are block elements</p>
+    <a class="link" href="https://www.google.com">Google</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
     
@@ -57,17 +61,17 @@
     </div>
 
     <h3>Unordered list</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>First</li>
         <li>Second</li>
         <li>Third</li>
     </ul>
 
     <h3>Unordered inline list</h3>
-    <ul>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">First</li>
+        <li class="list-item-inline">Second</li>
+        <li class="list-item-inline">Third</li>
     </ul>
 
     <h3>Ordered list</h3>
@@ -78,7 +82,7 @@
     </ol>
 
     <h3>Reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>First</li>
         <li>Second</li>
         <li>Third</li>
@@ -87,12 +91,12 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>Brand name</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Products</a></li>
-            <li><a href="/">About</a></li>
+    <nav class="navigation container">
+        <div class="nav-brand">Brand name</div>
+        <ul class="list-non-bullet nav-list">
+            <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Products</a></li>
+            <li class="list-item-inline"><a class="link" href="/">About</a></li>
         </ul>
     </nav>
     
