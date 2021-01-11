@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <h1>Welcome to Piyush's component library!</h1>
     <p>I'm creating a library which would make all my projects look good and consistent</p>
@@ -13,7 +15,7 @@
     <hr>
 
     <h2>@Typography</h2>
-    
+
     <h1>Biggest heading</h1>
     <h2>Second biggest heading</h2>
     <p>This is normal paragraph</p>
@@ -21,17 +23,19 @@
     <p>This paragraph will have <strong>bold</strong> text.</p>
 
     <p>Note: If we write something and it takes entire row, then it's called block elements</p>
-    <p>Note: If we write something and it does not takes entire row, it takes it's own space, then it's called inline elements</p>
+    <p>Note: If we write something and it does not takes entire row, it takes it's own space, then it's called inline
+        elements</p>
     <p>h3, p, div are block elements</p>
 
     <hr>
 
     <h2>@Containers</h2>
-    
+
     <p>Container is an empty space, we can use div tags</p>
     <p>padding: top right bottom left;</p>
     <p>if we write padding: top right;</p>
-    <p>then the padding of top will be applied to bottom and right will be applied to left. Check styes.css for container</p>
+    <p>then the padding of top will be applied to bottom and right will be applied to left. Check styes.css for
+        container</p>
     <h3>fluid container</h3>
     <div class="container">This is a fluid container which will go to the end of the page(full width)</div>
 
@@ -41,16 +45,16 @@
     <hr>
 
     <h2>@links</h2>
-    
+
     <p>Anything which connect to other thing is a link</p>
     <p>We define it using anchor tag and use a attribute href to redirect</p>
-    
+
     <a class="link" href="https://www.google.com">Google</a>
     <a class="link link-primary" href="/">Primary link</a>
     <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
-    
+
     <h2>@list</h2>
 
     <div>
@@ -94,48 +98,66 @@
     <nav class="navigation container">
         <div class="nav-brand">Brand name</div>
         <ul class="list-non-bullet nav-list">
-            <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
-            <li class="list-item-inline"><a class="link" href="/">Products</a></li>
-            <li class="list-item-inline"><a class="link" href="/">About</a></li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
+            </li>
         </ul>
     </nav>
-    
+
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src = "images/main.svg" />
-        <h1>header's heading</h1>
+    <header class="header-main">
+        <img class="header-img" src="images/main.svg" />
+        <h1 class="header-heading">Hello, my name is <span class="heading-inverted">Piyush</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    
-    <section>
-        <h3>white section</h3>
-        <p>this will go end to end with little margin at both sides. White background</p>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>this will go end to end with little margin at both sides. White background</p>
+        </div>
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>this will go end to end with little margin at both sides. Of white color</p>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>off white section</h1>
+            <p>this will go end to end with little margin at both sides. Off white color</p>
+        </div>
     </section>
 
     <hr>
-    
+
     <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer but we don't use heading tags</div>
-        <ul>
-            <li>social 1</li>
-            <li>social 2</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer but we don't use heading tags</div>
+        <ul class=" social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">social 1</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">social 2</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">social 3</a>
+            </li>
         </ul>
     </footer>
-    
+
     <div style="height: 500px;">
 
     </div>
-    
+
 </body>
+
 </html>
