@@ -116,6 +116,9 @@ hr {
 .section h1 {
     text-align: center;
 }
+.section p {
+    text-align: center;
+}
 
 .ow {
     background-color: var(--off-white);
